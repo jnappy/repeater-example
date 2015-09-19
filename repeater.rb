@@ -3,13 +3,17 @@ require "pry"
 #write a method that accepts two paramters:
   # a string to be repeatedly put to the string
   # how many times that string should be repeated
+def repeat_string(string, number_of_times)
+  number_of_times.to_i.times do
+  puts string
+  end
+end
 
-# ask the user for a string
 
-# store the users input in a variable
+puts "what do you want to repeat?"
+user_string = gets.strip
 
-# ask the user for the number of times to repeat the string
+puts "how many times do you want to repeat the string"
+user_number_of_times = gets.strip
 
-# store the users input in a variable
-
-# call the method 
+repeat_string(user_string, user_number_of_times)
